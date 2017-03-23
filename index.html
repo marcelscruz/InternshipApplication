@@ -1,61 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Bootstrap Starter Template</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Let me be your intern!</title>
+	<meta name="author" content="Marcel Cruz" />
+	<meta name="description" content="Marcel wants to be your new intern, so why not having a look in what can offer you?" />
 
-	<!-- Bootstrap -->
-<!--	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+	<link rel="stylesheet" type="text/css" href="style.css" />
 
-	<link type="text/css" href="style.css" rel="stylesheet">
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 
-	<script>
-		$(document).ready(function() {
-			$('#fullpage').fullpage();
-		});
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	</script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!--	FullPage plugin -->
-	<link type="text/css" href="fullPage/jquery.fullPage.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!--FullPage Feature-->
+	<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
 	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
 
-	<!--
-	<section id="section1" class="section">
-
-		<h1>SECTION 1</h1>
-	</section>
-
-	<section id="section2" class="section">
-		<h1>SECTION 2</h1>
-
-	</section>
--->
-
 	<div id="fullpage">
-		<div class="section">whatever</div>
-		<div class="section">whatever</div>
-	</div>
+		<div class="section" id="section1">
+			<div class="container">
+				<h1>That's MARCEL,</h1>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+				<div class="row">
+					<div class="col-sm-1">
+
+					</div>
+
+					<div class="col-sm-8">
+						<div class="polaroid">
+							<img src="http://lorempixel.com/350/300/people">
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<p>He wants to be your new <strong><span style="color: #DE1B1B">intern</span></strong>.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- #section1 end -->
+
+		<div class="section" id="section2">
+			<div class="intro">
+				<div class="container">
+				<div class="row"></div>
+					<h1>Well, he wants to be part of this team, to learn from the best.</h1>
+				</div>
+			</div>
+		</div>
+		<!-- #section2 end -->
+	</div>
+	<!-- #fullpage end -->
+
 </body>
 
 </html>

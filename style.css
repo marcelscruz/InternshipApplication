@@ -1,23 +1,91 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	margin: 0;
-	padding: 0;
+.fp-tableCell {
+	display: block !important;
 }
 
-/*
-.section {
-	height: 100vh;
+.container {
+	width: 960px;
+	margin: 0 auto 0;
 }
-*/
+
+/* SECTION 1 */
 
 #section1 {
-	background: red;
+/*	background: #235a77;*/
+	background: #2B2B2B;
+	color: #fff;
 }
 
+#section1 h1 {
+	top: 60px;
+	font-family: 'Poiret One', cursive;
+	font-size: 5em;
+	text-align: center;
+}
+
+#section1 .polaroid {
+	top: 150px;
+	height: 370px;
+	width: 330px;
+	padding-top: 15px;
+	background: #eaecef;
+	margin: auto;
+	box-shadow: 5px 5px 10px #333;
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg); /* IE 9 */
+	-webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+	transform: rotate(3deg);
+	-moz-transition: -moz-transform .15s linear;
+	-ms-transition: -ms-transform .15s linear;
+	-webkit-transition: -webkit-transform .15s linear;
+}
+
+#section1 .polaroid:hover {
+	-moz-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+	position: relative;
+	z-index: 5;
+	-moz-transition: -moz-transform .25s linear;
+	-ms-transition: -ms-transform .25s linear;
+	-webkit-transition: -webkit-transform .25s linear;
+	-webkit-box-shadow: 5px 5px 10px #111;
+}
+
+#section1 img {
+	display: block;
+	margin: 0 auto 0;
+	height: 300px;
+	width: 300px;
+}
+
+#section1 p {
+	font-family: Raleway;
+	text-align: center;
+	font-size: 6em;
+	color: #F6F6F6;
+	position: relative;
+	top: -50px;
+	text-transform: lowercase;
+}
+
+/* SECTION 2 */
+
 #section2 {
-	background: blue;
+	background: #E9E581;
 }
