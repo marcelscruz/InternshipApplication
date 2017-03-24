@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
 
 *,
@@ -12,10 +11,33 @@ p {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	color: #2B2B2B;
 }
 
 .fp-tableCell {
 	display: block !important;
+}
+
+.section {
+	height: 100vh !important;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
 }
 
 .container {
@@ -26,16 +48,34 @@ p {
 /* SECTION 1 */
 
 #section1 {
-/*	background: #235a77;*/
 	background: #2B2B2B;
 	color: #fff;
 }
 
 #section1 h1 {
-	top: 60px;
+	top: 0px;
 	font-family: 'Poiret One', cursive;
 	font-size: 5em;
 	text-align: center;
+	color: #F6F6F6;
+}
+
+#section1 p {
+	font-family: Raleway;
+	text-align: center;
+	font-size: 6em;
+	color: #F6F6F6;
+	position: relative;
+/*	top: -50px;*/
+	text-transform: lowercase;
+	min-height: 80vh;
+}
+
+#section1 img {
+	display: block;
+	margin: 0 auto 0;
+	height: 300px;
+	width: 300px;
 }
 
 #section1 .polaroid {
@@ -45,7 +85,7 @@ p {
 	padding-top: 15px;
 	background: #eaecef;
 	margin: auto;
-	box-shadow: 5px 5px 10px #333;
+	box-shadow: 5px 5px 10px #000;
 	-moz-transform: rotate(3deg);
 	-ms-transform: rotate(3deg); /* IE 9 */
 	-webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
@@ -64,28 +104,42 @@ p {
 	-moz-transition: -moz-transform .25s linear;
 	-ms-transition: -ms-transform .25s linear;
 	-webkit-transition: -webkit-transform .25s linear;
-	-webkit-box-shadow: 5px 5px 10px #111;
-}
-
-#section1 img {
-	display: block;
-	margin: 0 auto 0;
-	height: 300px;
-	width: 300px;
-}
-
-#section1 p {
-	font-family: Raleway;
-	text-align: center;
-	font-size: 6em;
-	color: #F6F6F6;
-	position: relative;
-	top: -50px;
-	text-transform: lowercase;
+	-webkit-box-shadow: 5px 5px 20px #000;
 }
 
 /* SECTION 2 */
 
 #section2 {
 	background: #E9E581;
+}
+
+#section2 h2 {
+	font-family: Raleway;
+	text-align: center;
+	font-size: 4em;
+	color: #2B2B2B;
+	position: relative;
+/*	top: -100px;	*/
+}
+
+#section2-upper {
+	height: 70vh;
+}
+
+#section2-lower {
+/*	top: 150px;*/
+	height: 20vh;
+}
+
+.asterix{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	bottom: 20px;
+	left: 10px;
+	width: 500px;
+}
+
+.asterix p {
+	color: #6c6d70;
 }
