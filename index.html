@@ -7,7 +7,7 @@
 	<meta name="author" content="Marcel Cruz" />
 	<meta name="description" content="Marcel wants to be your new intern, so why not having a look in what can offer you?" />
 
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -24,11 +24,14 @@
 	<!--FullPage Feature-->
 	<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
 	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 	<!-- Chart.JS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
+	
+	<!-- CSS3 Animate It -->
+	<link type="text/css" href="css/animations.css" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -47,7 +50,11 @@
 									<h1>That's Marcel,</h1>
 								</div>
 								<div class="col-md-5">
-
+<!--
+									<div class='animatedParent'>
+										<h3 class='animated bounceInUp padded'>bounceInDown</h3>
+									</div>
+-->
 								</div>
 							</div>
 							<!-- .row end -->
@@ -91,14 +98,16 @@
 									<h2>He's been learning many skills both from college<sup><span style="font-size:20px;">1</span></sup></h2>
 								</div>
 								<div class="col-md-8">
-
+									<div class='animatedParent'>
+										<h3 class='animated bounceInUp padded' style="color: red;">bounceInDown</h3>
+									</div>
 								</div>
 							</div>
 							<!-- .row end -->
 
 							<div class="row lower">
 								<div class="col-md-10">
-									<div class="pieChart">
+									<div class="pieChart module">
 										<canvas id="myChart"></canvas>
 									</div>
 								</div>
@@ -135,7 +144,7 @@
 					<div class="inner">
 						<div class="container">
 
-							
+
 							<div class="row upper">
 								<div class="col-md-4">
 
@@ -144,7 +153,7 @@
 
 								</div>
 							</div>
-							 <!-- .row end --> 
+							<!-- .row end -->
 
 							<div class="row lower">
 								<div class="col-md-10">
@@ -250,7 +259,9 @@
 
 	</div>
 	<!-- #fullpage end -->
-
+	
+	<script type="text/javascript" src="js/css3-animate-it.js"></script>
+	
 	<script>
 		var ctx = document.getElementById("myChart").getContext('2d');
 		var myChart = new Chart(ctx, {
