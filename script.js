@@ -3,3 +3,4 @@ $(document).ready(function() {
 				scrollingSpeed: 1000
 			});
 		});
+

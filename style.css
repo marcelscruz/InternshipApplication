@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
-
 *,
 h1,
 h2,
@@ -11,7 +10,7 @@ p {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	color: #2B2B2B;
+	color: #F6F6F6;
 }
 
 .fp-tableCell {
@@ -23,27 +22,49 @@ p {
 }
 
 .outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 
 .middle {
-    display: table-cell;
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: center;
 }
 
 .inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: /*whatever width you want*/;
+	margin-left: auto;
+	margin-right: auto;
+	width: /*whatever width you want*/
+	;
 }
 
 .container {
 	width: 960px;
 	margin: 0 auto 0;
 }
+
+.upper {
+	height: 50vh;
+}
+
+.lower {
+	height: 50vh;
+}
+
+.char {
+/*	position: relative;*/
+	height: 400px;
+/*	margin-right: -20px !important;*/
+}
+
+.pieChart {
+	position: relative;
+	height: 350px;
+	width: 350px;
+}
+
 
 /* SECTION 1 */
 
@@ -55,29 +76,33 @@ p {
 #section1 h1 {
 	top: 0px;
 	font-family: 'Poiret One', cursive;
-	font-size: 5em;
+	font-size: 7em;
 	text-align: center;
 	color: #F6F6F6;
+}
+
+#section1 h2 {
+	font-size: 50px;
+	padding-bottom: 220px !important;
+	margin-left: 100px;
+	bottom: 200px;
+	line-height: 80px;
+	font-weight: 100;
 }
 
 #section1 p {
 	font-family: Raleway;
 	text-align: center;
 	font-size: 6em;
-	color: #F6F6F6;
+	color: #fff;
 	position: relative;
-/*	top: -50px;*/
+	/*	top: -50px;*/
 	text-transform: lowercase;
 	min-height: 80vh;
 }
 
-#section1 img {
-	display: block;
-	margin: 0 auto 0;
-	height: 300px;
-	width: 300px;
-}
 
+/*
 #section1 .polaroid {
 	top: 150px;
 	height: 370px;
@@ -87,8 +112,8 @@ p {
 	margin: auto;
 	box-shadow: 5px 5px 10px #000;
 	-moz-transform: rotate(3deg);
-	-ms-transform: rotate(3deg); /* IE 9 */
-	-webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+	-ms-transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
 	transform: rotate(3deg);
 	-moz-transition: -moz-transform .15s linear;
 	-ms-transition: -ms-transform .15s linear;
@@ -106,20 +131,22 @@ p {
 	-webkit-transition: -webkit-transform .25s linear;
 	-webkit-box-shadow: 5px 5px 20px #000;
 }
+*/
+
 
 /* SECTION 2 */
 
 #section2 {
-	background: #E9E581;
+	background: #2B2B2B;
 }
 
 #section2 h2 {
 	font-family: Raleway;
 	text-align: center;
 	font-size: 4em;
-	color: #2B2B2B;
+	color: #fff;
 	position: relative;
-/*	top: -100px;	*/
+	/*	top: -100px;	*/
 }
 
 #section2-upper {
@@ -127,11 +154,11 @@ p {
 }
 
 #section2-lower {
-/*	top: 150px;*/
+	/*	top: 150px;*/
 	height: 20vh;
 }
 
-.asterix{
+.asterix {
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -144,17 +171,20 @@ p {
 	color: #6c6d70;
 }
 
+
 /* SECTION 3 */
 
 #section3 {
-	background: #F6F6F6;
+	background: #2B2B2B;
 }
+
 
 /* SECTION 4 */
 
 #section4 {
-	background: #DE1B1B;
+	background: #2B2B2B;
 }
+
 
 /* SECTION 5 */
 

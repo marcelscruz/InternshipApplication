@@ -26,6 +26,9 @@
 	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 
+	<!-- Chart.JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 </head>
 
 <body>
@@ -39,21 +42,32 @@
 					<div class="inner">
 						<div class="container">
 
-							
-
-							<div class="row">
-								<div class="col-md-9">
-								<h1>That's MARCEL,</h1>
-									<div class="polaroid">
-										<img src="http://lorempixel.com/350/300/people">
-									</div>
+							<div class="row upper">
+								<div class="col-md-7">
+									<h1>That's Marcel,</h1>
 								</div>
-								<div class="col-md-3">
-									<p>He wants to be your new <strong><span style="color: #DE1B1B">intern</span></strong>.</p>
+								<div class="col-md-5">
+
 								</div>
 							</div>
 							<!-- .row end -->
-							
+
+							<div class="row lower">
+								<div class="col-md-10">
+									<h2>he<br>
+										<span style="margin-left: 100px">wants</span><br>
+										<span style="margin-left: 200px">to</span><br>
+										<span style="margin-left: 300px">be</span><br>
+										<span style="margin-left: 400px">your</span><br>
+										<span style="margin-left: 500px">new</span><br>
+										<span style="color: #E9E581; margin-left: 600px">intern</span></h2>
+								</div>
+								<div class="col-md-2">
+									<img class="char" src="character/web/char1.png" style="margin-left: 50px;">
+								</div>
+							</div>
+							<!-- .row end -->
+
 						</div>
 						<!-- .container end -->
 					</div>
@@ -71,8 +85,8 @@
 				<div class="middle">
 					<div class="inner">
 						<div class="container">
-						
-							<div class="row upper" id="section2-upper">
+
+							<div class="row upper">
 								<div class="col-md-4">
 									<h2>He's been learning many skills both from college<sup><span style="font-size:20px;">1</span></sup></h2>
 								</div>
@@ -81,18 +95,19 @@
 								</div>
 							</div>
 							<!-- .row end -->
-							
-							<div class="row" id="section2-lower">
-								<div class="col-md-8">
 
+							<div class="row lower">
+								<div class="col-md-10">
+									<div class="pieChart">
+										<canvas id="myChart"></canvas>
+									</div>
 								</div>
-								<div class="col-md-4">
-<!--									<h2>and the internet.</h2>-->
-							<img src="character/web/char1.png">
+								<div class="col-md-2">
+									<img class="char" src="character/web/char2.png">
 								</div>
 							</div>
 							<!-- .row end -->
-							
+
 						</div>
 						<!-- .container end -->
 					</div>
@@ -103,32 +118,45 @@
 			<!-- .outer end -->
 		</div>
 		<!-- #section2 end -->
-		
-		
+
+
 		<!-- #section3 -->
 		<div class="section" id="section3">
-		
+
 			<div class="outer">
-			
+
+				<!--
 				<div class="asterix">
- 					<p style="font-size:12px;">1. He's in second year, that's why he's looking for an internship</p>
+					<p style="font-size:12px;">1. He's in second year, that's why he's looking for an internship</p>
 				</div>
-				
+-->
+
 				<div class="middle">
 					<div class="inner">
 						<div class="container">
-						
-							<div class="row">
-								<div class="col-md-4">
-									
-								</div>
 
+							
+							<div class="row upper">
+								<div class="col-md-4">
+
+								</div>
 								<div class="col-md-8">
 
 								</div>
 							</div>
+							 <!-- .row end --> 
+
+							<div class="row lower">
+								<div class="col-md-10">
+
+								</div>
+								<div class="col-md-2">
+									<img class="char" src="character/web/char3.png" style="margin-left: 40px;">
+								</div>
+							</div>
+
 							<!-- .row end -->
-							
+
 						</div>
 						<!-- .container end -->
 					</div>
@@ -139,26 +167,35 @@
 			<!-- .outer end -->
 		</div>
 		<!-- #section3 end -->
-		
+
 		<!-- #section4 -->
 		<div class="section" id="section4">
-		
+
 			<div class="outer">
 				<div class="middle">
 					<div class="inner">
 						<div class="container">
-						
-							<div class="row">
-								<div class="col-md-4">
-									
-								</div>
 
+							<div class="row upper">
+								<div class="col-md-4">
+
+								</div>
 								<div class="col-md-8">
 
 								</div>
 							</div>
 							<!-- .row end -->
-							
+
+							<div class="row lower">
+								<div class="col-md-10">
+
+								</div>
+								<div class="col-md-2">
+									<img class="char" src="character/web/char4.png" style="margin-left: -170px;">
+								</div>
+							</div>
+							<!-- .row end -->
+
 						</div>
 						<!-- .container end -->
 					</div>
@@ -169,26 +206,35 @@
 			<!-- .outer end -->
 		</div>
 		<!-- #section4 end -->
-		
+
 		<!-- #section5 -->
 		<div class="section" id="section5">
-		
+
 			<div class="outer">
 				<div class="middle">
 					<div class="inner">
 						<div class="container">
-						
-							<div class="row">
-								<div class="col-md-4">
-									
-								</div>
 
+							<div class="row upper">
+								<div class="col-md-4">
+
+								</div>
 								<div class="col-md-8">
 
 								</div>
 							</div>
 							<!-- .row end -->
-							
+
+							<div class="row lower">
+								<div class="col-md-10">
+
+								</div>
+								<div class="col-md-2">
+									<img class="char" src="character/web/char2.png">
+								</div>
+							</div>
+							<!-- .row end -->
+
 						</div>
 						<!-- .container end -->
 					</div>
@@ -199,14 +245,32 @@
 			<!-- .outer end -->
 		</div>
 		<!-- #sectio5 end -->
-		
-		
+
+
 
 	</div>
 	<!-- #fullpage end -->
 
+	<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'pie',
+			data: {
+				labels: ["HTML", "CSS", "JavaScript", "Illustrator", "Photoshop"],
+				datasets: [{
+					backgroundColor: [
+						"#e74c3c",
+						"#3498db",
+						"#f1c40f",
+						"#9b59b6",
+						"#2ecc71"
+					],
+					data: [8, 7, 5, 5, 4]
+				}]
+			}
+		});
+
+	</script>
 </body>
 
 </html>
-
-
