@@ -14,17 +14,23 @@ p {
 }
 
 .fp-tableCell {
-	display: block !important;
+	/*	display: block !important;*/
 }
 
 .section {
-	height: 100vh !important;
+	background: #2B2B2B;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	position: fixed;
 }
 
 .outer {
 	display: table;
 	position: absolute;
-	height: 100%;
+	height: 200vh;
 	width: 100%;
 }
 
@@ -36,27 +42,27 @@ p {
 .inner {
 	margin-left: auto;
 	margin-right: auto;
-	width: /*whatever width you want*/
-	;
-}
-
-.container {
 	width: 960px;
-	margin: 0 auto 0;
+	;
 }
 
 .upper {
 	height: 50vh;
+	width: 1280px !important;
+	margin: 0 auto !important;
 }
 
 .lower {
 	height: 50vh;
+	width: 1280px !important;
+	margin: 0 auto !important;
 }
 
 .char {
-/*	position: relative;*/
+	display: inline-block;
+	position: relative;
 	height: 400px;
-/*	margin-right: -20px !important;*/
+	margin-right: 180px !important;
 }
 
 .pieChart {
@@ -65,16 +71,19 @@ p {
 	width: 350px;
 }
 
+.hidden {
+	visibility: hidden;
+}
 
 /* SECTION 1 */
 
 #section1 {
-	background: #2B2B2B;
 	color: #fff;
+	z-index: 5;
 }
 
 #section1 h1 {
-	top: 0px;
+	top: 80px;
 	font-family: 'Poiret One', cursive;
 	font-size: 7em;
 	text-align: center;
@@ -83,11 +92,11 @@ p {
 
 #section1 h2 {
 	font-size: 50px;
-	padding-bottom: 220px !important;
-	margin-left: 100px;
+	margin-left: 50px;
 	bottom: 200px;
-	line-height: 80px;
+	line-height: 30px;
 	font-weight: 100;
+	text-align: left;
 }
 
 #section1 p {
@@ -96,111 +105,42 @@ p {
 	font-size: 6em;
 	color: #fff;
 	position: relative;
-	/*	top: -50px;*/
 	text-transform: lowercase;
 	min-height: 80vh;
 }
 
 
-/*
-#section1 .polaroid {
-	top: 150px;
-	height: 370px;
-	width: 330px;
-	padding-top: 15px;
-	background: #eaecef;
-	margin: auto;
-	box-shadow: 5px 5px 10px #000;
-	-moz-transform: rotate(3deg);
-	-ms-transform: rotate(3deg);
-	-webkit-transform: rotate(3deg);
-	transform: rotate(3deg);
-	-moz-transition: -moz-transform .15s linear;
-	-ms-transition: -ms-transform .15s linear;
-	-webkit-transition: -webkit-transform .15s linear;
-}
-
-#section1 .polaroid:hover {
-	-moz-transform: scale(1.25);
-	-ms-transform: scale(1.25);
-	-webkit-transform: scale(1.25);
-	position: relative;
-	z-index: 5;
-	-moz-transition: -moz-transform .25s linear;
-	-ms-transition: -ms-transform .25s linear;
-	-webkit-transition: -webkit-transform .25s linear;
-	-webkit-box-shadow: 5px 5px 20px #000;
-}
-*/
-
-
 /* SECTION 2 */
 
 #section2 {
-	background: #2B2B2B;
+	top: 0;
+	right: 0;
+	z-index: 4;
+	display: none;
 }
 
 #section2 h2 {
-	font-family: Raleway;
-	text-align: center;
+	top: 80px;
+	font-family: 'Poiret One', cursive;
 	font-size: 4em;
-	color: #fff;
-	position: relative;
-	/*	top: -100px;	*/
-}
-
-#section2-upper {
-	height: 70vh;
-}
-
-#section2-lower {
-	/*	top: 150px;*/
-	height: 20vh;
-}
-
-.asterix {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	bottom: 20px;
-	left: 10px;
-	width: 500px;
-}
-
-.asterix p {
-	color: #6c6d70;
+	text-align: center;
+	color: #F6F6F6;
 }
 
 
 /* SECTION 3 */
 
-#section3 {
-	background: #2B2B2B;
-}
+#section3 {}
 
 
 /* SECTION 4 */
 
-#section4 {
-	background: #2B2B2B;
-}
+#section4 {}
 
 
 /* SECTION 5 */
 
-#section5 {
-	background: #2B2B2B;
-}
+#section5 {}
 
 
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s; /* So they look staggered */
-}
 
-@keyframes come-in {
-  to { transform: translateY(0); }
-}

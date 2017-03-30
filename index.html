@@ -5,283 +5,126 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Let me be your intern!</title>
 	<meta name="author" content="Marcel Cruz" />
-	<meta name="description" content="Marcel wants to be your new intern, so why not having a look in what can offer you?" />
+	<meta name="description" content="Marcel wants to be your new intern, so why not having a look in what he can offer you?" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<!--FullPage Feature-->
-	<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
-	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+	<!-- FullPage -->
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+-->
+
 	<script type="text/javascript" src="js/script.js"></script>
 
 	<!-- Chart.JS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-	
+
 	<!-- CSS3 Animate It -->
 	<link type="text/css" href="css/animations.css" rel="stylesheet">
-	
+
 </head>
 
 <body>
 
-	<div id="fullpage">
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">
+				<div class="container">
 
-		<!-- #section1 -->
-		<div class="section" id="section1">
-			<div class="outer">
-				<div class="middle">
-					<div class="inner">
-						<div class="container">
 
-							<div class="row upper">
-								<div class="col-md-7">
-									<h1>That's Marcel,</h1>
-								</div>
-								<div class="col-md-5">
-<!--
-									<div class='animatedParent'>
-										<h3 class='animated bounceInUp padded'>bounceInDown</h3>
-									</div>
--->
-								</div>
+					<!-- SECTION 1 -->
+					<div id="section1" class="section animatedParent">
+						<div class="row upper">
+
+							<div class="col-md-3">
 							</div>
-							<!-- .row end -->
 
-							<div class="row lower">
-								<div class="col-md-10">
-									<h2>he<br>
-										<span style="margin-left: 100px">wants</span><br>
-										<span style="margin-left: 200px">to</span><br>
-										<span style="margin-left: 300px">be</span><br>
-										<span style="margin-left: 400px">your</span><br>
-										<span style="margin-left: 500px">new</span><br>
-										<span style="color: #E9E581; margin-left: 600px">intern</span></h2>
-								</div>
-								<div class="col-md-2">
-									<img class="char" src="character/web/char1.png" style="margin-left: 50px;">
-								</div>
+							<div class="col-md-9 animated fadeInRight slower">
+								<h1>That's <span style="color: #E9E581">Marcel</span>,</h1>
 							</div>
-							<!-- .row end -->
 
 						</div>
-						<!-- .container end -->
-					</div>
-					<!-- .inner end -->
-				</div>
-				<!-- .middle end -->
-			</div>
-			<!-- .outer end -->
-		</div>
-		<!-- #section1 end -->
+						<!-- upper end -->
 
-		<!-- #section2 -->
-		<div class="section" id="section2">
-			<div class="outer">
-				<div class="middle">
-					<div class="inner">
-						<div class="container">
+						<div class="row lower">
 
-							<div class="row upper">
-								<div class="col-md-4">
-									<h2>He's been learning many skills both from college<sup><span style="font-size:20px;">1</span></sup></h2>
-								</div>
-								<div class="col-md-8">
-									<div class='animatedParent'>
-										<h3 class='animated bounceInUp padded' style="color: red;">bounceInDown</h3>
-									</div>
-								</div>
+							<div class="col-md-10" style="margin-top: 200px">
+								<h2 class="animated bounceInRight slower">he</h2>
+								<h2 class="animated fadeInDown slower" style="margin-left: 150px">wants</h2>
+								<h2 class="animated bounceInUp slower" style="margin-left: 350px">to</h2>
+								<h2 class="animated bounceInLeft slower" style="margin-left: 480px">be</h2>
+								<h2 class="animated fadeInUp slower" style="margin-left: 600px">your</h2>
+								<h2 class="animated growIn slower" style="margin-left: 750px">new</h2>
+								<h2 class="animated bounceInDown slower" style="color: #DE1B1B; margin-left: 900px;">intern</h2>
 							</div>
-							<!-- .row end -->
 
-							<div class="row lower">
-								<div class="col-md-10">
-									<div class="pieChart module">
-										<canvas id="myChart"></canvas>
-									</div>
-								</div>
-								<div class="col-md-2">
-									<img class="char" src="character/web/char2.png">
-								</div>
+							<div class="col-md-2 animated fadeIn slowest">
+								<img class="char" src="img/char1.png">
 							</div>
-							<!-- .row end -->
 
 						</div>
-						<!-- .container end -->
+						<!-- lower end -->
 					</div>
-					<!-- .inner end -->
-				</div>
-				<!-- .middle end -->
-			</div>
-			<!-- .outer end -->
-		</div>
-		<!-- #section2 end -->
+					<!-- SECTION 1 end -->
 
 
-		<!-- #section3 -->
-		<div class="section" id="section3">
+					<!-- SECTION 2 -->
+					<div id="section2" class="section animatedParent">
+						<div class="row upper">
 
-			<div class="outer">
-
-				<!--
-				<div class="asterix">
-					<p style="font-size:12px;">1. He's in second year, that's why he's looking for an internship</p>
-				</div>
--->
-
-				<div class="middle">
-					<div class="inner">
-						<div class="container">
-
-
-							<div class="row upper">
-								<div class="col-md-4">
-
-								</div>
-								<div class="col-md-8">
-
-								</div>
-							</div>
-							<!-- .row end -->
-
-							<div class="row lower">
-								<div class="col-md-10">
-
-								</div>
-								<div class="col-md-2">
-									<img class="char" src="character/web/char3.png" style="margin-left: 40px;">
-								</div>
+							<div class="col-md-4">
+								<h2 class='animated bounceInLeft'>He's been learning many skills both from college<sup><span style="font-size:20px;">1</span></sup></h2>
 							</div>
 
-							<!-- .row end -->
+							<div class="col-md-8">
+								<div class=''>
+									<h2 class='animated bounceInDown'>It Works!</h2>
+								</div>
+							</div>
 
 						</div>
-						<!-- .container end -->
-					</div>
-					<!-- .inner end -->
-				</div>
-				<!-- .middle end -->
-			</div>
-			<!-- .outer end -->
-		</div>
-		<!-- #section3 end -->
+						<!-- upper end -->
 
-		<!-- #section4 -->
-		<div class="section" id="section4">
+						<div class="row lower">
 
-			<div class="outer">
-				<div class="middle">
-					<div class="inner">
-						<div class="container">
-
-							<div class="row upper">
-								<div class="col-md-4">
-
-								</div>
-								<div class="col-md-8">
-
+							<div class="col-md-10">
+								<div id="pieChart" class="pieChart module animated fadeInLeft">
+									<canvas id="myChart"></canvas>
 								</div>
 							</div>
-							<!-- .row end -->
 
-							<div class="row lower">
-								<div class="col-md-10">
-
-								</div>
-								<div class="col-md-2">
-									<img class="char" src="character/web/char4.png" style="margin-left: -170px;">
-								</div>
+							<div class="col-md-2">
+								<img class="char" src="img/char2.png">
 							</div>
-							<!-- .row end -->
 
 						</div>
-						<!-- .container end -->
+						<!-- lower end -->
 					</div>
-					<!-- .inner end -->
+					<!-- SECTION 2 end -->
+
+
 				</div>
-				<!-- .middle end -->
+				<!-- container end -->
 			</div>
-			<!-- .outer end -->
+			<!-- inner end -->
 		</div>
-		<!-- #section4 end -->
-
-		<!-- #section5 -->
-		<div class="section" id="section5">
-
-			<div class="outer">
-				<div class="middle">
-					<div class="inner">
-						<div class="container">
-
-							<div class="row upper">
-								<div class="col-md-4">
-
-								</div>
-								<div class="col-md-8">
-
-								</div>
-							</div>
-							<!-- .row end -->
-
-							<div class="row lower">
-								<div class="col-md-10">
-
-								</div>
-								<div class="col-md-2">
-									<img class="char" src="character/web/char2.png">
-								</div>
-							</div>
-							<!-- .row end -->
-
-						</div>
-						<!-- .container end -->
-					</div>
-					<!-- .inner end -->
-				</div>
-				<!-- .middle end -->
-			</div>
-			<!-- .outer end -->
-		</div>
-		<!-- #sectio5 end -->
-
-
-
+		<!-- middle end -->
 	</div>
-	<!-- #fullpage end -->
-	
-	<script type="text/javascript" src="js/css3-animate-it.js"></script>
-	
-	<script>
-		var ctx = document.getElementById("myChart").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["HTML", "CSS", "JavaScript", "Illustrator", "Photoshop"],
-				datasets: [{
-					backgroundColor: [
-						"#e74c3c",
-						"#3498db",
-						"#f1c40f",
-						"#9b59b6",
-						"#2ecc71"
-					],
-					data: [8, 7, 5, 5, 4]
-				}]
-			}
-		});
+	<!-- outer end -->
 
-	</script>
+
+	<!-- CSS3 Animate It -->
+	<script type="text/javascript" src="js/css3-animate-it.js"></script>
+
+	<!-- Charts JS File -->
+	<script type="text/javascript" src="js/charts.js"></script>
+	
 </body>
 
 </html>
