@@ -11,26 +11,81 @@ p {
 	padding: 0;
 	position: relative;
 	color: #F6F6F6;
+	font-family: 'Poiret One', cursive;
 }
 
-.fp-tableCell {
-	/*	display: block !important;*/
+body {
+	background: #2B2B2B !important;
+	overflow:hidden;
 }
 
-.section {
-	background: #2B2B2B;
-	width: 100%;
-	height: 100%;
+.buttonsNav {
 	position: absolute;
-	top: 0;
-	left: 0;
+	z-index: 10;
+}
+
+.button {
+	width: 100px;
+	display: inline-block;
+	padding: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.button:hover {
+	outline: none;
+}
+
+.button:active {
+	background-color: #275928;
+	box-shadow: 0 5px #666;
+	outline: none;
+	transform: translateY(4px);
+	-moz-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	-o-transform: translateY(4px);
+	-webkit-transform: translateY(4px);
+}
+
+#buttonUp {
+	bottom: 120px;
+	left: 50px;
 	position: fixed;
+	text-align: center;
+}
+
+#buttonDown {
+	bottom: 30px;
+	left: 50px;
+	position: fixed;
+	text-align: center;
+}
+
+.buttonPressed,
+.buttonPressed:active {
+	background-color: #275928;
+	cursor: default;
+	box-shadow: 0 5px #666;
+	outline: none;
+	transform: translateY(4px);
+	-moz-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	-o-transform: translateY(4px);
+	-webkit-transform: translateY(4px);
 }
 
 .outer {
 	display: table;
 	position: absolute;
-	height: 200vh;
+	height: 5000px;
 	width: 100%;
 }
 
@@ -43,7 +98,16 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
-	;
+}
+
+.section {
+	background: #2B2B2B;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	position: fixed;
 }
 
 .upper {
@@ -59,21 +123,13 @@ p {
 }
 
 .char {
-	display: inline-block;
-	position: relative;
 	height: 400px;
-	margin-right: 180px !important;
-}
-
-.pieChart {
-	position: relative;
-	height: 350px;
-	width: 350px;
 }
 
 .hidden {
 	visibility: hidden;
 }
+
 
 /* SECTION 1 */
 
@@ -84,63 +140,121 @@ p {
 
 #section1 h1 {
 	top: 80px;
-	font-family: 'Poiret One', cursive;
 	font-size: 7em;
 	text-align: center;
-	color: #F6F6F6;
 }
 
 #section1 h2 {
-	font-size: 50px;
 	margin-left: 50px;
-	bottom: 200px;
-	line-height: 30px;
-	font-weight: 100;
-	text-align: left;
-}
-
-#section1 p {
-	font-family: Raleway;
-	text-align: center;
-	font-size: 6em;
-	color: #fff;
-	position: relative;
-	text-transform: lowercase;
-	min-height: 80vh;
+	bottom: 300px;
+	font-size: 50px;
+	letter-spacing: 15px;
+	line-height: 40px;
 }
 
 
 /* SECTION 2 */
 
-#section2 {
-	top: 0;
-	right: 0;
-	z-index: 4;
-	display: none;
-}
-
 #section2 h2 {
-	top: 80px;
-	font-family: 'Poiret One', cursive;
 	font-size: 4em;
 	text-align: center;
-	color: #F6F6F6;
+	top: 30px;
+	letter-spacing: 2px;
+	z-index: 4;
+}
+
+#section2 .char {
+	right: 49px;
+}
+
+.pieChart {
+	height: 520px;
+	width: 520px;
+	position: relative;
+	bottom: 130px;
+	left: 300px;
 }
 
 
 /* SECTION 3 */
 
-#section3 {}
+#section3 h2 {
+	top: 30px;
+	left: 30px;
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: 2px;
+	line-height: 45px;
+	text-align: left;
+	z-index: 3;
+}
+
+#section3 .char {
+	height: 447px;
+	bottom: 49px;
+	right: 21px;
+}
 
 
 /* SECTION 4 */
 
-#section4 {}
+#section4 {
+	z-index: 2;
+}
+
+#section4 h2 {
+	font-size: 4em;
+	text-align: center;
+	top: 50px;
+	letter-spacing: 2px
+}
+
+#section4 h3 {
+	top: -100px;
+}
+
+#section4 .char {
+	right: 221px;
+}
 
 
 /* SECTION 5 */
 
-#section5 {}
+#section5 {
+	z-index: 1;
+}
+
+.contact-box {
+	height: 400px;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	background: lightgray;
+	box-shadow: -10px 10px 4px #444;
+	text-align: center;
+	color: #2B2B2B;
+	padding-top: 60px;
+}
+
+
+
+.contact-box a, h4 {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.contact-box a:active, a:visited {
+	text-decoration: none;
+}
+
+
+
 
 
 

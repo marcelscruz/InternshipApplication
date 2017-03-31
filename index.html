@@ -3,22 +3,17 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Let me be your intern!</title>
+	<title>Let me be your intern</title>
 	<meta name="author" content="Marcel Cruz" />
 	<meta name="description" content="Marcel wants to be your new intern, so why not having a look in what he can offer you?" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!--Bootstrap-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<!-- FullPage -->
-	<!--
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
--->
 
 	<script type="text/javascript" src="js/script.js"></script>
 
@@ -37,6 +32,11 @@
 			<div class="inner">
 				<div class="container">
 
+					<div class="buttonsNav">
+						<button id="buttonUp" class="button" onclick="scrollUp()"><span class="glyphicon glyphicon-chevron-up"></span></button>
+						<br>
+						<button id="buttonDown" class="button" onclick="scrollDown()"><span class="glyphicon glyphicon-chevron-down"></span></button>
+					</div>
 
 					<!-- SECTION 1 -->
 					<div id="section1" class="section animatedParent">
@@ -45,8 +45,8 @@
 							<div class="col-md-3">
 							</div>
 
-							<div class="col-md-9 animated fadeInRight slower">
-								<h1>That's <span style="color: #E9E581">Marcel</span>,</h1>
+							<div class="col-md-9">
+								<h1 class="animated fadeInRight slower">That's <span style="color: #E9E581">Marcel</span>,</h1>
 							</div>
 
 						</div>
@@ -64,8 +64,9 @@
 								<h2 class="animated bounceInDown slower" style="color: #DE1B1B; margin-left: 900px;">intern</h2>
 							</div>
 
-							<div class="col-md-2 animated fadeIn slowest">
-								<img class="char" src="img/char1.png">
+							<div class="col-md-2">
+
+								<img class="char animated fadeIn slowest" src="img/char1.png">
 							</div>
 
 						</div>
@@ -75,17 +76,11 @@
 
 
 					<!-- SECTION 2 -->
-					<div id="section2" class="section animatedParent">
+					<div id="section2" class="section hidden animatedParent">
 						<div class="row upper">
 
-							<div class="col-md-4">
-								<h2 class='animated bounceInLeft'>He's been learning many skills both from college<sup><span style="font-size:20px;">1</span></sup></h2>
-							</div>
-
-							<div class="col-md-8">
-								<div class=''>
-									<h2 class='animated bounceInDown'>It Works!</h2>
-								</div>
+							<div class="col-md-12">
+								<h2 class="animated fadeInLeft slow">He also wants to be a web developer and for this he's learning the newest technologies</h2>
 							</div>
 
 						</div>
@@ -94,13 +89,13 @@
 						<div class="row lower">
 
 							<div class="col-md-10">
-								<div id="pieChart" class="pieChart module animated fadeInLeft">
-									<canvas id="myChart"></canvas>
+								<div id="pieChart" class="pieChart module">
+									<canvas id="myChart" class="animated bounceIn slower"></canvas>
 								</div>
 							</div>
 
 							<div class="col-md-2">
-								<img class="char" src="img/char2.png">
+								<img class="char animated fadeIn slowest" src="img/char2.png">
 							</div>
 
 						</div>
@@ -108,6 +103,102 @@
 					</div>
 					<!-- SECTION 2 end -->
 
+
+					<!-- SECTION 3 -->
+					<div id="section3" class="section hidden animatedParent">
+						<div class="row upper">
+
+							<div class="col-md-12 animated pulse slower">
+								<h2>Currently in second year</h2>
+								<h2 style="padding-left: 170px">of IT at CCT, he takes care of</h2>
+								<h2 style="padding-left: 330px">assignments and tests, and also</h2>
+								<h2 style="padding-left: 530px">develop personal projects</h2>
+							</div>
+
+							<div class="col-md-0">
+							</div>
+
+						</div>
+						<!-- upper end -->
+
+						<div class="row lower">
+
+							<div class="col-md-10">
+								<h3 class="animated rotateInDownLeft slow">building his first website as a freelance web developer</h3>
+								<h3 class="animated bounceInRight slower">developing an app to find shelter for the homeless</h3>
+								<h3 class="animated rotateInUpLeft slow">planning a chat app as a college project</h3>
+							</div>
+
+							<div class="col-md-2">
+								<img class="char animated fadeIn slowest" src="img/char3.png">
+							</div>
+
+						</div>
+						<!-- lower end -->
+					</div>
+					<!-- SECTION 3 end -->
+
+
+					<!-- SECTION 4 -->
+					<div id="section4" class="section hidden animatedParent">
+						<div class="row upper">
+
+							<div class="col-md-12">
+								<h2 class="animated fadeInDown slower">Now it's time for him to be at CarTrawler</h2>
+							</div>
+
+						</div>
+						<!-- upper end -->
+
+						<div class="row lower">
+
+							<div class="col-md-10">
+								<h3 class="animated fadeInLeft">learn from the best professionals</h3>
+								<h3 class="animated fadeInRight">implement and use what he's already learned</h3>
+								<h3 class="animated fadeInLeft">strive to delivery quality content</h3>
+								<h3 class="animated fadeInRight">get in touch with real world experience</h3>
+							</div>
+
+							<div class="col-md-2">
+								<img class="char animated fadeIn slowest" src="img/char4.png">
+							</div>
+
+						</div>
+						<!-- lower end -->
+					</div>
+					<!-- SECTION 4 end -->
+
+
+					<!-- SECTION 5 -->
+					<div id="section5" class="section hidden animatedParent">
+						<div class="row upper">
+
+							<div class="col-md-9">
+							</div>
+
+							<div class="col-md-3">
+							</div>
+
+						</div>
+						<!-- upper end -->
+
+						<div class="row lower">
+
+							<div class="col-md-12 animated growIn slowest">
+								<div class="contact-box">
+									<h1>He'll like hearing from you</h1>
+									<h2>marcelcruz@live.com</h2>
+									<h2>089 965 5929</h2>
+									<a href="https://www.linkedin.com/in/marcelscruz/" target="_blank"><h4>LinkedIn</h4></a>
+									<h4> | </h4>
+									<a href="https://github.com/marcelscruz" target="_blank"><h4>GitHub</h4></a>
+								</div>
+							</div>
+
+						</div>
+						<!-- lower end -->
+					</div>
+					<!-- SECTION 5 end -->
 
 				</div>
 				<!-- container end -->
@@ -124,7 +215,7 @@
 
 	<!-- Charts JS File -->
 	<script type="text/javascript" src="js/charts.js"></script>
-	
+
 </body>
 
 </html>
