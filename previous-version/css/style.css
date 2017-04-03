@@ -10,13 +10,13 @@ p {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	color: #2B2B2B;
+	color: #F6F6F6;
 	font-family: 'Poiret One', cursive;
 }
 
 body {
-	background: #F6F6F6 !important;
-	overflow: hidden;
+	background: #2B2B2B !important;
+	overflow:hidden;
 }
 
 .buttonsNav {
@@ -34,7 +34,7 @@ body {
 	text-decoration: none;
 	outline: none;
 	color: #fff;
-	background-color: #b6bac1;
+	background-color: #4CAF50;
 	border: none;
 	border-radius: 15px;
 	box-shadow: 0 9px #999;
@@ -45,8 +45,8 @@ body {
 }
 
 .button:active {
-	background-color: #b6bac1;
-	box-shadow: 0 5px #999;
+	background-color: #275928;
+	box-shadow: 0 5px #666;
 	outline: none;
 	transform: translateY(4px);
 	-moz-transform: translateY(4px);
@@ -71,7 +71,7 @@ body {
 
 .buttonPressed,
 .buttonPressed:active {
-	background-color: #646568;
+	background-color: #275928;
 	cursor: default;
 	box-shadow: 0 5px #666;
 	outline: none;
@@ -101,7 +101,7 @@ body {
 }
 
 .section {
-	background: #F6F6F6;
+	background: #2B2B2B;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -140,20 +140,8 @@ body {
 
 #section1 h1 {
 	top: 80px;
-	left: 200px;
 	font-size: 7em;
 	text-align: center;
-	background: #F6F6F6;
-	width: 600px
-}
-
-#section1 hr {
-	top: 140px;
-	border: 0;
-	height: 2px;
-	width: 1250px;
-	background: #333;
-	background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 #section1 h2 {
@@ -168,21 +156,15 @@ body {
 /* SECTION 2 */
 
 #section2 h2 {
-	top: 30px;
 	font-size: 4em;
 	text-align: center;
-	letter-spacing: 10px;
+	top: 30px;
+	letter-spacing: 2px;
 	z-index: 4;
-	padding: 10px;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
 }
 
 #section2 .char {
-/*	width: 200px;*/
-	bottom: 71px;
-	height: 470px;
-	right: 32px;
+	right: 49px;
 }
 
 .pieChart {
@@ -198,23 +180,19 @@ body {
 
 #section3 h2 {
 	top: 30px;
-	font-size: 3em;
+	left: 30px;
+	font-size: 4em;
 	text-align: center;
-	letter-spacing: 10px;
-	text-align: center;
+	letter-spacing: 2px;
+	line-height: 45px;
+	text-align: left;
 	z-index: 3;
-	padding: 10px;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
 }
 
 #section3 .char {
-	bottom: 2px;
-	right: 55px;
-}
-
-#section3 h3 {
-	top: -50px;
+	height: 447px;
+	bottom: 49px;
+	right: 21px;
 }
 
 
@@ -228,27 +206,15 @@ body {
 	font-size: 4em;
 	text-align: center;
 	top: 50px;
-	letter-spacing: 10px;
-	padding: 10px;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
+	letter-spacing: 2px
 }
 
 #section4 h3 {
-	top: -80px;
+	top: -100px;
 }
 
 #section4 .char {
-	height: 424px;
-	right: 269px;
-	bottom: 14px;
-}
-
-.sticker {
-	background: #d9dce0 !important;
-	box-shadow: -10px 10px 4px #444;
-	width: 2000px !important;
-	overflow: hidden;
+	right: 221px;
 }
 
 
@@ -269,20 +235,26 @@ body {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
-	background: #d9dce0;
+	background: lightgray;
 	box-shadow: -10px 10px 4px #444;
 	text-align: center;
-	color: #646568;
+	color: #2B2B2B;
 	padding-top: 60px;
 }
 
-.contact-box a,
-h4 {
+
+
+.contact-box a, h4 {
 	display: inline-block;
 	text-decoration: none;
 }
 
-.contact-box a:active,
-a:visited {
+.contact-box a:active, a:visited {
 	text-decoration: none;
 }
+
+
+
+
+
+
