@@ -111,9 +111,9 @@ body {
 }
 
 .upper {
-	height: 50vh;
+	height: 40vh;
 	width: 1280px !important;
-	margin: 0 auto !important;
+	margin: 0 auto 43px !important;
 }
 
 .lower {
@@ -139,7 +139,7 @@ body {
 }
 
 #section1 h1 {
-	top: 80px;
+	top: 50px;
 	left: 200px;
 	font-size: 7em;
 	text-align: center;
@@ -148,7 +148,7 @@ body {
 }
 
 #section1 hr {
-	top: 140px;
+	top: 110px;
 	border: 0;
 	height: 2px;
 	width: 1250px;
@@ -168,7 +168,7 @@ body {
 /* SECTION 2 */
 
 #section2 h2 {
-	top: 30px;
+	top: 0px;
 	font-size: 4em;
 	text-align: center;
 	letter-spacing: 10px;
@@ -186,10 +186,10 @@ body {
 }
 
 .pieChart {
-	height: 520px;
-	width: 520px;
+	height: 500px;
+	width: 500px;
 	position: relative;
-	bottom: 130px;
+	bottom: 100px;
 	left: 300px;
 }
 
@@ -197,7 +197,7 @@ body {
 /* SECTION 3 */
 
 #section3 h2 {
-	top: 30px;
+	top: 0px;
 	font-size: 3em;
 	text-align: center;
 	letter-spacing: 10px;
@@ -227,7 +227,7 @@ body {
 #section4 h2 {
 	font-size: 4em;
 	text-align: center;
-	top: 50px;
+	top: 0px;
 	letter-spacing: 10px;
 	padding: 10px;
 	border-top: 1px solid gray;
