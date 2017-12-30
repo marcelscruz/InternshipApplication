@@ -10,6 +10,7 @@ A project for showing the skills I have acquired since the beginning of my studi
 
 * HTML
 * CSS
+* Bootstrap
 * JavaScript
 * jQuery
 
